@@ -33,7 +33,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Generate site
-        run: python build_site.py
+        run: python generate.py
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
