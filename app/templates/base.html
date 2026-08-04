@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        {% if page_title %}
+            {{ page_title }}
+        {% elif article %}
+            {{ article.title }} | DailyScope
+        {% else %}
+            DailyScope | Latest US News
+        {% endif %}
+    </title>
+
+    <meta
+        name="description"
+        content="{% if meta_description %}{{ meta_description }}{% elif article %}{{ article.description }}{% else %}Latest breaking news from the United States and around the world.{% endif %}"
+    >
+
+    <meta
+        name="robots"
+        content="index,follow"
+    >
+
+    <meta
+        name="author"
+        content="DailyScope"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0f172a"
+    >
+
+    <link
+        rel="canonical"
+        href="{{ request.url }}"
+    >
+
+    <!-- Open Graph -->
+
+    <meta
+        property="og:type"
+        content="article"
+    >
+
+    <meta
+        property="og:title"
+        content="{% if article %}{{ article.title }}{% else %}DailyScope{% endif %}"
+    >
+
+    <meta
+        property="og:description"
+        content="{% if article %}{{ article.description }}{% else %}Latest US News{% endif %}"
+    >
+
+    {% if article %}
+
+    <meta
+        property="og:image"
+        content="{{ article.image }}"
+    >
+
+    {% endif %}
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a
+            href="/"
+            class="logo"
+        >
+            Daily<span>Scope</span>
+        </a>
+
+        <nav>
+
+            <ul>
+
+                <li>
+
+                    <a href="/">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="/about">
+
+                        About
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="/contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+{% block content %}
+
+{% endblock %}
+
+</main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h3>
+
+                    DailyScope
+
+                </h3>
+
+                <p>
+
+                    DailyScope is an independent digital news platform that
+                    aggregates breaking news from trusted media across the
+                    United States. Our mission is to provide a clean,
+                    fast and reliable reading experience.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Navigation
+
+                </h3>
+
+                <ul>
+
+                    <li>
+
+                        <a href="/">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="/about">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="/contact">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    Legal
+
+                </h3>
+
+                <ul>
+
+                    <li>
+
+                        <a href="/privacy">
+
+                            Privacy Policy
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="/terms">
+
+                            Terms & Conditions
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="/cookies">
+
+                            Cookie Policy
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 DailyScope. All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="/static/js/main.js"></script>
+
+</body>
+
+</html>
