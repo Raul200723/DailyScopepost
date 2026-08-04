@@ -33,6 +33,13 @@ jobs:
           pip install -r requirements.txt
 
       - name: Generate site
+        env:
+          APP_NAME: DailyScope
+          BASE_URL: https://dailyscopepost.com
+          LANGUAGE: ${{ secrets.LANGUAGE }}
+          COUNTRY: ${{ secrets.COUNTRY }}
+          GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python generate.py
 
       - name: Upload Pages artifact
