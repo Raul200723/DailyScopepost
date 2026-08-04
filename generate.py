@@ -46,3 +46,24 @@ for file in [
     "CNAME"
 ]:
     shutil.copy(file, DIST / file)
+
+import shutil
+
+FILES_TO_COPY = [
+    "robots.txt",
+    "sitemap.xml",
+    "ads.txt",
+    "CNAME",
+    "google51e4758e124c73e2.html"
+]
+
+for file in FILES_TO_COPY:
+
+    source = ROOT / file
+
+    if source.exists():
+
+        shutil.copy(
+            source,
+            DIST / file
+        )
