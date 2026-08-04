@@ -36,3 +36,13 @@ async def main():
 if __name__ == "__main__":
 
     asyncio.run(main())
+
+import shutil
+
+for file in [
+    "robots.txt",
+    "sitemap.xml",
+    "ads.txt",
+    "CNAME"
+]:
+    shutil.copy(file, DIST / file)
