@@ -42,6 +42,11 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python generate.py
 
+      - name: Copy article images
+        run: |
+          mkdir -p dist/static/images
+          cp -r app/content/images/. dist/static/images/
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
