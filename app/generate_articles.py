@@ -134,7 +134,7 @@ async def generate_articles():
                 "published": item["publishedAt"],
 
                 "image": (
-                    f"/content/images/{image_name}"
+                    f"/static/images/{image_name}"
                     if image_path.exists()
                     else "/static/images/no-image.webp"
                 ),
