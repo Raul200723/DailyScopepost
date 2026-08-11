@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://dailyscopepost.com/sitemap.xml
