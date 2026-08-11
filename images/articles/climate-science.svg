@@ -1,0 +1,34 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a warming globe with temperature indicators">
+  <defs>
+    <radialGradient id="bg-climate-science" cx="32%" cy="30%" r="95%">
+      <stop offset="0%" stop-color="#158a95"/>
+      <stop offset="55%" stop-color="#0f6b74"/>
+      <stop offset="100%" stop-color="#10141f"/>
+    </radialGradient>
+    <linearGradient id="sheen-climate-science" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(149 0.5 0.5)">
+      <stop offset="0%" stop-color="#faf8f4" stop-opacity="0.10"/>
+      <stop offset="45%" stop-color="#faf8f4" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="grain-climate-science">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.03 0"/>
+    </filter>
+    <radialGradient id="vig-climate-science" cx="50%" cy="46%" r="72%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.38"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-climate-science)"/>
+  <rect width="800" height="450" fill="url(#sheen-climate-science)"/>
+  <rect width="800" height="450" filter="url(#grain-climate-science)"/>
+  <g transform="translate(240,60) scale(1.7)" fill="none" stroke="#faf8f4" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    
+<circle cx="150" cy="115" r="58"/>
+<path d="M150 45 V60 M150 170 V185 M80 115 H95 M205 115 H220 M97 62 L107 72 M203 62 L193 72 M97 168 L107 158 M203 168 L193 158"/>
+<path d="M110 130 Q130 145 150 130 T190 130" fill="none" stroke-width="3" opacity="0.6"/>
+
+  </g>
+  <rect width="800" height="450" fill="url(#vig-climate-science)"/>
+  <text x="40" y="404" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11.5" letter-spacing="1.8" fill="#faf8f4" opacity="0.7">ORIGINAL EDITORIAL ILLUSTRATION / DAILYSCOPEPOST</text>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="19" fill="#faf8f4" opacity="0.92">DailyScopePost</text>
+</svg>
