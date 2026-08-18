@@ -1,0 +1,34 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a flooded street with a house and rising water">
+  <defs>
+    <radialGradient id="bg-midwest-flooding" cx="32%" cy="30%" r="95%">
+      <stop offset="0%" stop-color="#2f5590"/>
+      <stop offset="55%" stop-color="#1d3b6b"/>
+      <stop offset="100%" stop-color="#10141f"/>
+    </radialGradient>
+    <linearGradient id="sheen-midwest-flooding" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(120 0.5 0.5)">
+      <stop offset="0%" stop-color="#faf8f4" stop-opacity="0.10"/>
+      <stop offset="45%" stop-color="#faf8f4" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig-midwest-flooding" cx="50%" cy="46%" r="72%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.38"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-midwest-flooding)"/>
+  <rect width="800" height="450" fill="url(#sheen-midwest-flooding)"/>
+  <g transform="translate(240,60) scale(1.7)" fill="none" stroke="#faf8f4" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    
+<path d="M40 150 H260" stroke-width="3"/>
+<path d="M50 150 Q70 135 90 150 T130 150 T170 150 T210 150" fill="none" stroke-width="3"/>
+<path d="M50 170 Q70 155 90 170 T130 170 T170 170 T210 170" fill="none" stroke-width="3" opacity="0.6"/>
+<path d="M100 60 L150 30 L200 60 V110 H100 Z"/>
+<path d="M120 110 V80 H150 V110" fill="none"/>
+<path d="M60 45 L75 60 M75 45 L60 60" stroke-width="2" opacity="0.6"/>
+<path d="M225 40 L240 55 M240 40 L225 55" stroke-width="2" opacity="0.6"/>
+
+  </g>
+  <rect width="800" height="450" fill="url(#vig-midwest-flooding)"/>
+  <rect x="0" y="0" width="800" height="450" fill="none" stroke="#000" stroke-opacity="0.3" stroke-width="12"/>
+  <text x="40" y="404" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11.5" letter-spacing="1.8" fill="#faf8f4" opacity="0.7">ORIGINAL EDITORIAL ILLUSTRATION / DAILYSCOPEPOST</text>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="19" fill="#faf8f4" opacity="0.92">DailyScopePost</text>
+</svg>

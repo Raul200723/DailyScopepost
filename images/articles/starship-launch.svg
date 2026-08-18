@@ -1,0 +1,33 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a rocket launching with a parachute descent">
+  <defs>
+    <radialGradient id="bg-starship-launch" cx="32%" cy="30%" r="95%">
+      <stop offset="0%" stop-color="#158a95"/>
+      <stop offset="55%" stop-color="#0f6b74"/>
+      <stop offset="100%" stop-color="#10141f"/>
+    </radialGradient>
+    <linearGradient id="sheen-starship-launch" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(118 0.5 0.5)">
+      <stop offset="0%" stop-color="#faf8f4" stop-opacity="0.10"/>
+      <stop offset="45%" stop-color="#faf8f4" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig-starship-launch" cx="50%" cy="46%" r="72%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.38"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-starship-launch)"/>
+  <rect width="800" height="450" fill="url(#sheen-starship-launch)"/>
+  <g transform="translate(240,60) scale(1.7)" fill="none" stroke="#faf8f4" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    
+<path d="M150 25 L178 100 L172 195 H128 L122 100 Z"/>
+<path d="M128 150 L95 195 M172 150 L205 195"/>
+<path d="M138 195 Q138 215 150 225 Q162 215 162 195" opacity="0.7"/>
+<circle cx="230" cy="45" r="2.5" fill="#faf8f4" stroke="none"/>
+<circle cx="60" cy="60" r="2" fill="#faf8f4" stroke="none"/>
+<circle cx="250" cy="90" r="1.5" fill="#faf8f4" stroke="none"/>
+
+  </g>
+  <rect width="800" height="450" fill="url(#vig-starship-launch)"/>
+  <rect x="0" y="0" width="800" height="450" fill="none" stroke="#000" stroke-opacity="0.3" stroke-width="12"/>
+  <text x="40" y="404" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11.5" letter-spacing="1.8" fill="#faf8f4" opacity="0.7">ORIGINAL EDITORIAL ILLUSTRATION / DAILYSCOPEPOST</text>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="19" fill="#faf8f4" opacity="0.92">DailyScopePost</text>
+</svg>

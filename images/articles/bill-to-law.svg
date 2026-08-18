@@ -1,0 +1,38 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a legislative document moving toward a signature">
+  <defs>
+    <radialGradient id="bg-bill-to-law" cx="32%" cy="30%" r="95%">
+      <stop offset="0%" stop-color="#9c2c45"/>
+      <stop offset="55%" stop-color="#7a1f34"/>
+      <stop offset="100%" stop-color="#10141f"/>
+    </radialGradient>
+    <linearGradient id="sheen-bill-to-law" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(115 0.5 0.5)">
+      <stop offset="0%" stop-color="#faf8f4" stop-opacity="0.10"/>
+      <stop offset="45%" stop-color="#faf8f4" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="grain-bill-to-law">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.03 0"/>
+    </filter>
+    <radialGradient id="vig-bill-to-law" cx="50%" cy="46%" r="72%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.38"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-bill-to-law)"/>
+  <rect width="800" height="450" fill="url(#sheen-bill-to-law)"/>
+  <rect width="800" height="450" filter="url(#grain-bill-to-law)"/>
+  <g transform="translate(240,60) scale(1.7)" fill="none" stroke="#faf8f4" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    
+<rect x="70" y="35" width="90" height="120" rx="4"/>
+<path d="M88 60 H142 M88 78 H142 M88 96 H125" stroke-width="4"/>
+<path d="M170 95 L200 95 M190 85 L200 95 L190 105" stroke-width="4"/>
+<rect x="210" y="35" width="90" height="120" rx="4" transform="translate(-90,0)" opacity="0"/>
+<path d="M60 175 H240" />
+<path d="M85 175 L85 155 L235 155 L235 175" fill="none"/>
+<circle cx="150" cy="200" r="4" fill="#faf8f4" stroke="none"/>
+
+  </g>
+  <rect width="800" height="450" fill="url(#vig-bill-to-law)"/>
+  <text x="40" y="404" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11.5" letter-spacing="1.8" fill="#faf8f4" opacity="0.7">ORIGINAL EDITORIAL ILLUSTRATION / DAILYSCOPEPOST</text>
+  <text x="40" y="52" font-family="Georgia, serif" font-size="19" fill="#faf8f4" opacity="0.92">DailyScopePost</text>
+</svg>
